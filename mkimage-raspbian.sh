@@ -9,7 +9,7 @@ mkdir -p "$rootfsDir"
 
 (
 	set -x
-	/usr/sbin/debootstrap --no-check-gpg --arch=armhf --verbose --variant='minbase' --include='iproute,iputils-ping' stretch "$rootfsDir" http://archive.raspbian.org/raspbian/
+	/usr/sbin/debootstrap --no-check-gpg --arch=armhf --verbose --variant='minbase' --include='iproute,iputils-ping' buster "$rootfsDir" http://archive.raspbian.org/raspbian/
 )
 
 # now for some Docker-specific tweaks
